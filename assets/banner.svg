@@ -1,17 +1,166 @@
-<!-- assets/banner.svg -->
-<svg width="900" height="200" xmlns="http://www.w3.org/2000/svg">
+<!--
+  ============================================================
+  FILE:    assets/banner.svg
+  PURPOSE: Hero banner at the top of my GitHub profile.
+
+  USE IN README.md:
+    <img src="./assets/banner.svg" width="100%" alt="banner" />
+
+  TO EDIT:
+    Name     → find "THE NAME HERE"
+    Tagline  → find "THE TAGLINE HERE"
+    Details  → find "detail one"
+    Colours  → change hex values like #1a1033
+    Height   → change height="320" AND viewBox="0 0 900 320" together
+
+  TEST:
+    Open this file in Chrome. Save → Refresh. That is the loop.
+  ============================================================
+-->
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="900"
+  height="320"
+  viewBox="0 0 900 320"
+>
+
+  <!-- ============================================================
+       DEFS — storage room. Nothing here renders by itself.
+       Define gradients and clips here, reference by id below.
+       ============================================================ -->
   <defs>
+
+    <!-- BACKGROUND GRADIENT
+         Diagonal fade from top-left to bottom-right.
+         Each stop is a colour waypoint: offset 0% = start, 100% = end. -->
+    <linearGradient
+      id="bgGradient"
+      x1="0%" y1="0%"
+      x2="100%" y2="100%"
+    >
+      <stop offset="0%"   stop-color="#120d24" />
+      <stop offset="60%"  stop-color="#1a1033" />
+      <stop offset="100%" stop-color="#2d1b69" />
+    </linearGradient>
+
+    <!-- CLIP PATH — shaped like the banner.
+         Groups using clip-path="url(#bannerClip)" get cropped
+         to this rectangle. Stops orbs bleeding outside rounded corners. -->
+    <clipPath id="bannerClip">
+      <rect width="900" height="320" rx="16" />
+    </clipPath>
+
+    <!-- CSS STYLES
+         Define once, apply with class="..." on elements below.
+         Change here → updates every element using that class. -->
     <style>
-      text { font-family: 'Segoe UI', sans-serif; fill: #e8e4ff; }
+      text {
+        font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+      }
+      .name-text {
+        font-size: 48px;
+        font-weight: 700;
+        fill: #e8e4ff;
+        letter-spacing: -0.5px;
+      }
+      .tagline-text {
+        font-size: 18px;
+        font-weight: 400;
+        fill: #9a80cc;
+      }
+      .detail-text {
+        font-size: 13px;
+        font-weight: 400;
+        fill: #12cba0ee;
+      }
     </style>
+
   </defs>
-  <!-- The purple background -->
-  <rect width="900" height="200" rx="12" fill="#381152"/>
-  <!-- Subtle grid or noise effect using shapes, not CSS -->
-  <text x="40" y="90" font-size="36" font-weight="700">Al Birun</text>
-  <text x="40" y="130" font-size="16" opacity="0.7">what you build · where you are</text>
-  <!-- Animated element -->
-  <circle cx="800" cy="100" r="60" fill="#4b3db3" opacity="0.3">
-    <animate attributeName="r" values="60;72;60" dur="4s" repeatCount="indefinite"/>
-  </circle>
+
+
+  <!-- ============================================================
+       LAYER 1 — BACKGROUND
+       Always written first. SVG paints in code order,
+       so first = bottom of the stack = behind everything.
+       ============================================================ -->
+
+  <rect
+    x="0"
+    y="0"
+    width="900"
+    height="320"
+    rx="16"
+    fill="url(#bgGradient)"
+  />
+
+
+  <!-- ============================================================
+       LAYER 2 — DECORATIVE SHAPES
+       Between background and text in the stack.
+       clip-path on the group keeps everything inside the banner boundary.
+       ============================================================ -->
+
+  <g clip-path="url(#bannerClip)">
+
+    <!-- ORB 1: large, top-right.
+         cy="-20" puts the center above the canvas so only the
+         bottom arc is visible. animate makes it breathe slowly. -->
+    <circle cx="820" cy="-20" r="200" fill="#4f3ed0" opacity="0.15">
+      <animate
+        attributeName="r"
+        values="200;220;200"
+        dur="6s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <!-- ORB 2: smaller, bottom-left.
+         cy="320" puts center at bottom edge — only top arc visible.
+         Different pulse duration from Orb 1 so rhythms feel organic. -->
+    <circle cx="80" cy="320" r="140" fill="#7c5cbf" opacity="0.15">
+      <animate
+        attributeName="r"
+        values="140;158;140"
+        dur="4s"
+        repeatCount="indefinite"
+      />
+    </circle>
+
+    <!-- ORB 3: small, mid-right. Static. Just adds depth quietly. -->
+    <circle cx="650" cy="200" r="55" fill="#9c6dd8" opacity="0.09" />
+
+    <!-- GRID TEXTURE: near-invisible dashed horizontal lines.
+         stroke-dasharray="4 8" = 4px dash, 8px gap, repeat.
+         Delete these if you want a cleaner look. -->
+    <line x1="0" y1="80"  x2="900" y2="80"  stroke="#9a80cc" stroke-width="1" stroke-dasharray="4 8" opacity="0.01" />
+    <line x1="0" y1="160" x2="900" y2="160" stroke="#9a80cc" stroke-width="1" stroke-dasharray="4 8" opacity="0.01" />
+    <line x1="0" y1="240" x2="900" y2="240" stroke="#9a80cc" stroke-width="1" stroke-dasharray="4 8" opacity="0.01" />
+
+    <!-- CORNER ACCENT: L-bracket in top-left corner.
+         Two lines meeting at (40, 36). Delete both if not wanted. -->
+    <line x1="40" y1="36" x2="40"  y2="96"  stroke="#7c5cbf" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+    <line x1="40" y1="36" x2="100" y2="36"  stroke="#7c5cbf" stroke-width="2" stroke-linecap="round" opacity="0.5" />
+
+  </g>
+
+
+  <!-- ============================================================
+       LAYER 3 — TEXT
+       Always last = always on top of everything.
+
+       x = distance from left edge.
+       y = BASELINE of the text (bottom of capital letters, not top).
+           With 48px font, top of letter is roughly y minus 40px.
+       ============================================================ -->
+
+  <!-- YOUR NAME — edit the text between the tags -->
+  <text class="name-text" x="60" y="162">Al Birun</text>
+
+  <!-- TAGLINE — one line, ~60 chars max -->
+  <text class="tagline-text" x="60" y="202">I don't care, I'll just keep on doing what I love &amp; can!</text>
+
+  <!-- DETAIL ROW — use · as separator between items -->
+  <text class="detail-text" x="60" y="284">Cs50x · Math · Excel (Learning)</text>
+
 </svg>
