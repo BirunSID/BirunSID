@@ -8,7 +8,7 @@
   <!-- The purple background -->
   <rect width="900" height="200" rx="12" fill="#381152"/>
   <!-- Subtle grid or noise effect using shapes, not CSS -->
-  <text x="40" y="90" font-size="36" font-weight="700">Sidratul Al Birun</text>
+  <text x="40" y="90" font-size="36" font-weight="700">Al Birun</text>
   <text x="40" y="130" font-size="16" opacity="0.7">what you build · where you are</text>
   <!-- Animated element -->
   <circle cx="800" cy="100" r="60" fill="#4b3db3" opacity="0.3">
