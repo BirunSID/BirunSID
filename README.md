@@ -18,10 +18,9 @@
 <!-- SECTION:LEARNING -->
 ## **Currently Learning**
 
-- C — through CS50x
-- Python — NumPy, Jupyter
-- Linear Algebra — for ML & DS via DeepLearning.AI
-- German — *Ja, mein Profil ist sehr nett und klug.*
+- Linear Algebra for ML and DS
+- Deutsch
+
 <!-- /SECTION:LEARNING -->
 
 ---
@@ -29,11 +28,14 @@
 <!-- SECTION:TOOLS -->
 ## **Tools I Use:**
 
-| Tool             | Level                |
-|------            |-------               |
-| Obsidian         | ████████████ mastery |
-| Jupyter Notebook | ████░░░░░░░░ basics  |
-| Excel            | ████░░░░░░░░ basics  |
+| Tool             | Level                  |
+|------            |-------                 |
+| Obsidian         | ████████████ mastery   |
+| Jupyter Notebook | ████░░░░░░░░ basics    |
+| Excel            | ████████░░░░ mediocre  |
+| C programming    | ████████░░░░ mediocre  |
+| Python           | ████░░░░░░░░ basics    |
+
 
 <!-- TO ADD: copy a table row and paste below the last one -->
 <!-- /SECTION:TOOLS -->
@@ -55,8 +57,9 @@
 <!-- SECTION:PROJECTS -->
 # **Things I'm building**
 
-**[learning-log](LINK)** — logging my professional learning life. nothing complicated.
-`C`
+**[learning-log](https://github.com/BirunSID/Learning-Log)** — logging my professional learning life. nothing complicated.
+**[SidWinder](https://github.com/BirunSID/SidWinder)** — An extension + yt dlp dependent programme that can download media with a single click.
+
 
 <!-- TO ADD: copy the two lines above (bold link + backtick tech), paste below -->
 <!-- /SECTION:PROJECTS -->
@@ -75,11 +78,12 @@
 <!-- SECTION:CONTACT -->
 ## **Find me**
 
-[![Discord](assets/Icons/socials/discord.svg)](DISCORD_URL)
+⚠️ Under development
+<!-- [![Discord](assets/Icons/socials/discord.svg)](DISCORD_URL)
 [![YouTube](assets/Icons/socials/youtube.svg)](YOUTUBE_URL)
 [![X](assets/Icons/socials/x.svg)](XTWITTER_URL)
 [![Facebook](assets/Icons/socials/facebook.svg)](FACEBOOK_URL)
-[![Gmail](assets/Icons/socials/gmail.svg)](mailto:rageinmist@gmail.com)
+[![Gmail](assets/Icons/socials/gmail.svg)](mailto:rageinmist@gmail.com) -->
 <!-- /SECTION:CONTACT -->
 
 ---
