@@ -40,10 +40,10 @@ C · Python · HTML · CSS · JavaScript · SQLite · NumPy · Git/GitHub
 <img src="assets/Icons/stack/Python_prog.svg" height="40" alt="Python" />
 <img src="assets/Icons/stack/numpy.svg" height="40" alt="NumPy" />
 
-**Languages:** C · Python · JavaScript
-**Web:** HTML · CSS
-**Data:** SQLite · NumPy · Jupyter
-**Tools:** Git · GitHub · Obsidian
+**Languages:** C · Python · JavaScript  
+**Web:** HTML · CSS  
+**Data:** SQLite · NumPy · Jupyter  
+**Tools:** Git · GitHub · Obsidian  
 
 <!-- TO ADD: copy an img tag above, change src and alt -->
 
