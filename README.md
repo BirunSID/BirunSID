@@ -53,7 +53,7 @@ C · Python · HTML · CSS · JavaScript · SQLite · NumPy · Git/GitHub
 
 <!-- SECTION:PROJECTS -->
 
-# **Things I'm building**
+## **Things I'm building**
 
 **[Learning-Log](https://github.com/BirunSID/Learning-Log)** — a public record of my technical learning, experiments, and progress.
 
@@ -67,7 +67,7 @@ C · Python · HTML · CSS · JavaScript · SQLite · NumPy · Git/GitHub
 
 <!-- SECTION:STATS -->
 
-## **stats**
+## **Stats**
 
 ![](https://github-readme-stats.shion.dev/api?username=BirunSID&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=false)
 ![](https://github-readme-stats.shion.dev/api/top-langs/?username=BirunSID&theme=tokyonight&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
@@ -77,17 +77,22 @@ C · Python · HTML · CSS · JavaScript · SQLite · NumPy · Git/GitHub
 ---
 
 <!-- SECTION:CONTACT -->
+<div align="center">
 
 ## **Find me**
 
-⚠️ Under development
+[![Personal Portfolio](assets/Icons/socials/portfolio-card.svg)](https://sidratul.vercel.app)
 
-<!-- [![Discord](assets/Icons/socials/discord.svg)](DISCORD_URL)
-[![YouTube](assets/Icons/socials/youtube.svg)](YOUTUBE_URL)
-[![X](assets/Icons/socials/x.svg)](XTWITTER_URL)
-[![Facebook](assets/Icons/socials/facebook.svg)](FACEBOOK_URL)
-[![Gmail](assets/Icons/socials/gmail.svg)](mailto:rageinmist@gmail.com) -->
+<br>
 
+[![Discord](assets/Icons/socials/discord.svg)](https://discord.com/invite/44vKzhtdsK)
+[![YouTube](assets/Icons/socials/youtube.svg)](https://www.youtube.com/@AnomalyRAGE0001)
+[![X](assets/Icons/socials/xtwitter.svg)](https://x.com/SidratulX)
+[![Facebook](assets/Icons/socials/facebook.svg)](https://www.facebook.com/profile.php?id=61577684369730)
+[![Gmail](assets/Icons/socials/gmail.svg)](mailto:rageinmist@gmail.com)
+[![LinkedIn](assets/Icons/socials/linkedin.svg)](https://www.linkedin.com/in/sidratul-al-birun-283a07368/)
+
+</div>
 <!-- /SECTION:CONTACT -->
 
 ---
